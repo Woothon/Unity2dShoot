@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour {
 
-    private WeaponScript weapon;
+    private WeaponScript[] weapons;
 
     private void Awake()
     {
-        // Retrieve the weapon only once
-        weapon = GetComponent<WeaponScript>();
+        // Retrieve the weapons
+        weapons = GetComponentsInChildren<WeaponScript>();
     }
     // Use this for initialization
     void Start () {
@@ -19,9 +19,12 @@ public class EnemyScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Auto-fire
-        if(weapon != null && weapon.CanAttack)
+        foreach(WeaponScript weapon in weapons)
         {
-            weapon.Attack(true);
+            if (weapon != null && weapon.CanAttack)
+            {
+                weapon.Attack(true);
+            }
         }
 	}
 }
