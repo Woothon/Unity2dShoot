@@ -2331,6 +2331,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4276349276835436, guid: b99c69b328f12d14b81a473c3085880f,
     type: 2}
   m_PrefabInternal: {fileID: 1047050817}
+--- !u!1001 &1139063851
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 50.550186
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.8989272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247616120091554, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 39ee97bf78c69da4fb196fce4c88c562, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1181254442
 Prefab:
   m_ObjectHideFlags: 0
@@ -2598,7 +2640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750b9a99f2affed4780c2ba0a9d2e3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 2, y: 2}
+  speed: {x: 1, y: 1}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 1
   isLooping: 0
@@ -3363,7 +3405,7 @@ Transform:
   - {fileID: 1382821114}
   - {fileID: 949388772}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1920871849
 GameObject:
