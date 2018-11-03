@@ -48,10 +48,13 @@ public class SpecialEffectsHelper : MonoBehaviour {
     {
         ParticleSystem newParticleSystem = Instantiate(prefab, position, Quaternion.identity) as ParticleSystem;
 
+        print("constant: " + newParticleSystem.main.startLifetime.constant);
+        print("constantMax: " + newParticleSystem.main.startLifetime.constantMax);
+        print("constantMin: " + newParticleSystem.main.startLifetime.constantMin);
         //Make sure if will be destroyed.
         Destroy(
             newParticleSystem.gameObject,
-            newParticleSystem.startLifetime);
+            newParticleSystem.main.startLifetime.constant);
 
         return newParticleSystem;
     }
