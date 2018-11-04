@@ -35,8 +35,9 @@ public class PlayerScript : MonoBehaviour {
             WeaponScript weapon = GetComponent<WeaponScript>();
             if(weapon != null)
             {
-                // false because the player is not an enemy
+                // false because the player is not an enemy               
                 weapon.Attack(false);
+                SoundEffectsHelper.Instance.MakePlayerShotSound();
             }
         }
 
