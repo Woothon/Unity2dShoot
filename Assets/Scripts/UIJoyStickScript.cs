@@ -11,8 +11,12 @@ public class UIJoyStickScript : MonoBehaviour {
 
 	public Transform border;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        print("test");
+    }
+    // Use this for initialization
+    void Start () {
         border = GameObject.Find("Border").transform;
         initPosition = GetComponentInParent<RectTransform>().position;
         r = Vector3.Distance(transform.position, border.position);

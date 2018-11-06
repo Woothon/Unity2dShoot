@@ -20,27 +20,42 @@ public class PlayerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //3 - Retrieve axis information
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        movement = new Vector2(
-            speed.x * inputX,
-            speed.y * inputY);
+        Move(input);
+
+        ScrollCircle joystick =  GameObject.Find("JoystickCircle").GetComponent<ScrollCircle>();
+        Vector2 joystickMove = joystick.GetMovement();
+        if (joystickMove.magnitude != 0)
+        {
+           Move(joystickMove);
+        }
+        
 
         bool shoot = Input.GetButtonDown("Fire1");
         shoot |= Input.GetButtonDown("Fire2");
 
         if (shoot)
         {
-            WeaponScript weapon = GetComponent<WeaponScript>();
-            if(weapon != null)
-            {
-                // false because the player is not an enemy               
-                weapon.Attack(false);
-                SoundEffectsHelper.Instance.MakePlayerShotSound();
-            }
+            Shoot();
         }
 
+    }
+
+    public void Move(Vector2 move)
+    {
+        movement = new Vector2(speed.x * move.x, speed.y * move.y);
+    }
+
+    public void Shoot()
+    {
+        WeaponScript weapon = GetComponent<WeaponScript>();
+        if (weapon != null)
+        {
+            // false because the player is not an enemy               
+            weapon.Attack(false);
+            SoundEffectsHelper.Instance.MakePlayerShotSound();
+        }
     }
 
     private void FixedUpdate()
@@ -53,6 +68,7 @@ public class PlayerScript : MonoBehaviour {
             rigidbodyComponent = GetComponent<Rigidbody2D>();
         }
 
+        //print("FixedUpdate "+ movement);
         //6 - Move the game object
         rigidbodyComponent.velocity = movement;
 
