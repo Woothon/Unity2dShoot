@@ -39,4 +39,5 @@ public class MoveScript : MonoBehaviour {
         //Apply movement to the rigidbody
         rigidbodyComponent.velocity = movement;
     }
+
 }
