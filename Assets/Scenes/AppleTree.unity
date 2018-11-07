@@ -560,11 +560,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4058060657929796, guid: d2321ab003318ac4ca2e728d6c5302d4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.19999999
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4058060657929796, guid: d2321ab003318ac4ca2e728d6c5302d4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.19999999
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 114329135645659098, guid: d2321ab003318ac4ca2e728d6c5302d4,
         type: 2}
@@ -595,6 +595,12 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 212968720059994338, guid: d2321ab003318ac4ca2e728d6c5302d4,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b813f4022183295459d49e6fe0d6428f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2321ab003318ac4ca2e728d6c5302d4, type: 2}
   m_IsPrefabParent: 0
@@ -4013,9 +4019,9 @@ RectTransform:
   m_Father: {fileID: 764245980}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359, y: -144}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -115, y: 108}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477452518
@@ -4067,7 +4073,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ea3ce2185bca3fc4aa2c57059f709df2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 670b8041d1c64b84b9f831367c1c82de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4290,7 +4296,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b639f38dcd06b34d8d33326e8167129, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a043ccda120501498b965abc5213249, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4332,9 +4338,9 @@ RectTransform:
   m_Father: {fileID: 764245980}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -365, y: -132.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 109, y: 119.5}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560165681
