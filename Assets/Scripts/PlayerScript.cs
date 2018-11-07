@@ -70,6 +70,7 @@ public class PlayerScript : MonoBehaviour {
 
         //print("FixedUpdate "+ movement);
         //6 - Move the game object
+        
         rigidbodyComponent.velocity = movement;
 
         //print(rigidbodyComponent.velocity.ToString());
